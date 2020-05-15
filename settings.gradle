@@ -1,0 +1,9 @@
+rootProject.name = 'meds-admin'
+includeBuild('../meds-core-1') 
+
+{
+    dependencySubstitution {
+        substitute module('com.meds:meds-core-1') with project(':')
+    }
+    
+    }
